@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600&family=Montserrat:wght@300;400;600;700&display=swap');
+
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+$primary: #01601c;
+
+$navbar-nav-link-padding-x: 1.3rem; 
+$nav-link-padding-y: 0.7rem;
+$nav-pills-link-active-color: #ffffff;
+$nav-link-color: #b8b8b8;
+$nav-link-font-weight: 600;
+
+$border-radius: .6rem;
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+
+:root{
+    --ff-1: 'Karla', sans-serif;
+}
+
+.min-vh-80{
+    min-height: 80vh;
+}
+
+.min-vh-70{
+    min-height: 70vh;
+}
+
+.home-active{
+    color: gray !important;
+}
+
+
+
+.site-navbar{
+
+    .navbrand-img,.nav-link{
+        transition: transform 0.5s;
+    }
+
+    &:hover .navbrand-img{
+        transform: rotate(50deg);
+    }
+
+    .nav-link.active{
+        color: white;
+    }
+
+    &:hover .nav-link.active{
+        transform: translateY(-5px);
+    }
+}
+
+
+.hero{
+    .hero_text{
+        p{
+            max-width: 30rem;
+            font-family: var(--ff-1) ;
+            font-size: 1rem;
+        }
+    }
+
+    a{
+        padding: 10px 30px;
+        font-size: 1.1rem;
+        i{
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.section_2{
+    .section_2_text{
+        p{
+            font-family: var(--ff-1);
+            font-size: 1rem;
+        }
+
+        .section_2_btn{
+            padding: 10px 20px;
+        }
+    }
+}
+
+.section_3{
+    .section_3_text{
+        p{
+            font-family: var(--ff-1);
+        }
+    }
+}
+
+.section_4{
+    .card:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
+
+.section_5{
+    .section_5_text{
+        p{
+            font-family: var(--ff-1);
+            max-width: 30rem;
+        }
+    }
+
+    .upButton{
+        right: 60px;
+        bottom: 61px;
+        
+        a{
+           i{
+            position: relative;
+            animation: jump 0.7s linear infinite;
+           }
+        }
+
+
+        @keyframes jump {
+            0% { top: 3px; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 3px; }
+        }
+    }
+
+
+
+}
+
+.section_6{
+    padding: 60px 0px;
+    .section_6_first{
+
+        p{
+            max-width: 33rem;
+            font-size: 1rem;
+        }
+
+        .section_6_text{
+            font-family: var(--ff-1);
+        }
+
+    }
+
+    .section_6_btn{
+        a{
+            padding: 10px 20px;
+        }
+        
+    }
+
+    .section_6_second{
+        p{
+            font-size: 0.9rem;
+            letter-spacing: 0.1rem;
+        }
+
+        .icon-group{
+            i{
+               font-size: 1.3em;
+               color: gray;
+               transition: color 0.5s;
+
+               &:hover{
+                color: rgb(84, 84, 84);
+               }  
+            }  
+            
+        }
+
+    }
+
+    .section_6_third{
+        ul{
+            li{
+                padding: 3px 0;
+                font-size: 0.9rem;
+                font-family: var(--ff-1);
+               
+                a{
+                    color: gray;
+                    transition: color 0.5s;
+
+                    &:hover{
+                        color:  rgb(84, 84, 84);
+                    }
+                }
+
+                
+            }
+
+        }
+    }
+
+}
